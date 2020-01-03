@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const Chance = require("chance");
 const chance = new Chance();
@@ -7,20 +7,24 @@ const replies = require("./replies.json");
 const config = require("./config.json");
 const dice = require("./functions/diceFunctions.js");
 
-/*
+const randomDice = function(){
+	let dice = [4,6,8,10,12,20,100];
+	let rolls = [0,0,0,0,0,0,0];
+	for(let i = 0; i < 5; i++) rolls[i] = Math.round(Math.random()*20);
+	rolls[5] = Math.round(Math.random()*5);
+	rolls[6] = Math.round(Math.random()*2);
 
-  DiceObject (countIn, sidesIn)
-  roll (dice)
-  diceExpMatcher (str)
-  spaceMatcher (str)
-  operatorMatcher (str)
-  orCombinator (matcher1, matcher2) 
-  parseDiceExpression (exp)
-  sortCollapseDice (uncolDie)
-  rollDiceString (exp)
+	let str = "";
 
-*/
+	for(let x = 0; x < rolls.length; x++){
+		if(rolls[x] > 0) str += rolls[x] + "d" + dice[x] + " ";
+	}
 
-var c = dice.rollDiceString("1d4 20d6 5d20");
+	return str;
+}
 
-console.log(c);
+for (let x = 0; x < 10; x++) {
+	let rand = randomDice();
+	console.log(rand);
+	console.log(dice.rollDiceString(rand));
+}
