@@ -3,6 +3,7 @@
 const config = require("../config.json");
 const Chance = require("chance");
 const chance = new Chance();
+const ADMIN_ID = config.
 const CRIT_MULT = 1;
 const DELIM = config.delim;
 
@@ -232,7 +233,8 @@ const rollDiceString = function(exp) {
 
     return rollResultToString(rollResult);
   } catch (err) {
-    return err;
+    console.log(err);
+    return "Oh... a bug in me bones... (ERR)" ;
   }
 };
 

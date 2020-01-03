@@ -19,8 +19,8 @@ const client = new Discord.Client();
 
 /* client state on 'ready', do init stuff */
 client.on("ready", () => {
-  console.log("Harmony Core online.");
-  client.user.setActivity("queries...", { type: "LISTENING" }).catch(err => {
+  console.log("Roll the Bones....");
+  client.user.setActivity("rolling bones", { type: "WATCHING" }).catch(err => {
     throw err;
   });
   console.log(
