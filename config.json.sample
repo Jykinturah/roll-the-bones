@@ -1,0 +1,8 @@
+{
+  "clientId": "<BOT_TOKEN_HERE>",
+  "prefix": "<PREFIX_CHAR_HERE>",
+  "crit":<CRIT_MULTIPLIER_VALUE>,
+  "admin": [
+    "<ADMIN_ID_CURRENTLY_UNUSED>"
+  ]
+}

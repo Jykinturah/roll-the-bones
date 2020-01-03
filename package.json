@@ -1,0 +1,15 @@
+{
+  "name": "rollthebones",
+  "version": "0.0.1",
+  "description": "5e",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Jykinturah",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "chance": "^1.1.4",
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {}
+}
