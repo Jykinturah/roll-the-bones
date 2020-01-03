@@ -3,7 +3,6 @@
 const config = require("../config.json");
 const Chance = require("chance");
 const chance = new Chance();
-const ADMIN_ID = config.
 const CRIT_MULT = 1;
 const DELIM = config.delim;
 
