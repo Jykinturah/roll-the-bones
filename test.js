@@ -23,8 +23,7 @@ const randomDice = function(){
 	return str;
 }
 
-for (let x = 0; x < 10; x++) {
-	let rand = randomDice();
-	console.log(rand);
-	console.log(dice.rollDiceString(rand));
-}
+//for (let x = 0; x < 10; x++) {
+//console.log( dice.rollDiceString("10d20 + 23 + 1D4 - 6 -5d4+10d6-5D20	+ d2+7 - 8 +9-5d6 -2d10 + 4d10-3d12") );
+//console.log( dice.rollDiceString("1d20 + 5"));
+////}
